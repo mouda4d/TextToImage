@@ -60,6 +60,7 @@ for char in text:
         i+=1
     # this message will be displayed whenever a character isnt matched
     except:
+        # only display this message once per unmatched character
         if char not in unmatched:
             print(f"{char} does not have a matching image, and was skipped.")
         unmatched.append(char)
